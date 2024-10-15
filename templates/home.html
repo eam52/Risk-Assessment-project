@@ -1,0 +1,56 @@
+{% extends 'layout.html' %}
+{% block content %}
+
+   <p> The restaurant business is considered a prime target for cyber attacks, especially when good practices are not
+       implemented within the industry. While assessing different resturants, I discovered significant
+       data on the frequency of cyber attacks targeting restaurants and small businesses. These attacks can lead to serious 
+       consequences, including substantial financial losses and, in some cases, business failure. </p>
+    
+    <h2>Potential Cyber Risks:</h2>
+    <ul>
+        <li><strong>Point of slae (POS) system vulnerabilities</strong>: 
+            <p> - There could be weaknesses in POS systrems, which can lead to attacker
+                having access to customer payment infomration and customer data.
+            </p>
+        </li>
+        <li><strong>Phishing Attacks</strong>:
+            <p> - Phishing attacks also happen in resturant businesses. When a resturant is not protected form cyber attacks, 
+                these attcks pose significant threats. There are different types of phishing attakcs that cna happento resturants 
+                and small businesses. 
+                <ol>
+                    <li>Spear phising</li>
+                    <li>Email phishing</li>
+                    <li>Business email compromise(BEC)</li>
+                    <li>Smishing</li>
+                    <li>social media phishing</li>
+                </ol>
+            </p>
+        </li>
+        <li><strong>Data Breaches:</strong> 
+            <p>Many restaurants are experiencing incidents of data breaches, 
+               resulting in the exposure of sensitive information belonging to customers and employees.</p>
+            <p>This is significant to recognize due to the dangers it poses. Attackers can gain access to personal
+               information such as social security numbers, driver’s license numbers, health insurance details, and other credentials. 
+               The repercussions extend beyond the targeted individuals, as these breaches can severely impact the business itself.</p></li>
+
+        <li><strong>Ransomeware</strong>:
+
+         </li>
+        <li> </li>
+    </ul>
+
+    <h2>Methodologies</h2>
+    <ul>
+        {% for method in methodologies %}
+        <li>{{ method }}</li>
+        {% endfor %}
+    </ul>
+
+    <h2>Findings</h2>
+    <ul>
+        {% for finding in findings %}
+        <li>{{ finding }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
+
